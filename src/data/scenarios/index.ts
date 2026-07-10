@@ -2,6 +2,12 @@ import type { WBScenarioDemoData, CBScenarioDemoData, ScenarioDemoData } from ".
 import { wbMeetingSummaryData } from "./wb-meeting-summary";
 import { wbWeeklyReportData } from "./wb-weekly-report";
 import { wbPRDData } from "./wb-prd";
+import { wbCompetitorAnalysisData } from "./wb-competitor-analysis";
+import { wbQuoteEmailData } from "./wb-quote-email";
+import { wbContentSummaryData } from "./wb-content-summary";
+import { wbProjectPlanData } from "./wb-project-plan";
+import { wbDataAnalysisData } from "./wb-data-analysis";
+import { wbTrainingMaterialData } from "./wb-training-material";
 import { cbCreatePageData } from "./cb-create-page";
 import { cbFixBugData } from "./cb-fix-bug";
 import { cbRefactorData } from "./cb-refactor";
@@ -12,6 +18,12 @@ const wbScenarioMap: Record<string, WBScenarioDemoData> = {
   "wb-meeting-summary": wbMeetingSummaryData,
   "wb-weekly-report": wbWeeklyReportData,
   "wb-prd": wbPRDData,
+  "wb-competitor-analysis": wbCompetitorAnalysisData,
+  "wb-quote-email": wbQuoteEmailData,
+  "wb-content-summary": wbContentSummaryData,
+  "wb-project-plan": wbProjectPlanData,
+  "wb-data-analysis": wbDataAnalysisData,
+  "wb-training-material": wbTrainingMaterialData,
 };
 
 const cbScenarioMap: Record<string, CBScenarioDemoData> = {

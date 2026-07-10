@@ -163,11 +163,15 @@ export default function WorkBuddyPage() {
             {showResult ? (
               <ResultPreview
                 conclusions={scenarioData.resultData.conclusions}
+                conclusionsTitle={scenarioData.resultData.conclusionsTitle}
                 todos={scenarioData.resultData.todos}
                 risks={scenarioData.resultData.risks}
                 email={scenarioData.resultData.email}
+                emailTitle={scenarioData.resultData.emailTitle}
                 report={scenarioData.resultData.report}
+                reportTitle={scenarioData.resultData.reportTitle}
                 prd={scenarioData.resultData.prd}
+                comparison={scenarioData.resultData.comparison}
               />
             ) : (
               <div className="text-center py-12">

@@ -1,3 +1,5 @@
+import type { ToDoItem } from "./scenarios/types";
+
 export const meetingMinutes = {
   title: "教研平台V3.0第二阶段产品评审会",
   date: "2026-07-10 14:00-15:30",
@@ -23,7 +25,7 @@ export const meetingMinutes = {
       { task: "稳定视频时间轴组件并完成联调", assignee: "李工", deadline: "两周内", priority: "中" },
       { task: "提交学情面板UI终稿", assignee: "陈设计", deadline: "今天下班前", priority: "中" },
       { task: "组织下周一进度对齐会议", assignee: "张经理", deadline: "下周一", priority: "低" },
-    ],
+    ] as ToDoItem[],
     risks: [
       "录播服务器兼容性问题将阻塞测试进度（当前最大风险）",
       "视频时间轴组件不稳定可能导致标注功能延期",

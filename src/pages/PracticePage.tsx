@@ -215,8 +215,6 @@ export default function PracticePage() {
               <div className="h-48">
                 <TerminalPanel
                   lines={codebuddyPlan.terminalOutput}
-                  isRunning={cbTerminalRunning}
-                  isComplete={cbTerminalComplete}
                   onStart={() => { setCbTerminalRunning(true); setTimeout(() => { setCbTerminalRunning(false); setCbTerminalComplete(true); }, codebuddyPlan.terminalOutput.length * 300); }}
                   onReset={() => { setCbTerminalRunning(false); setCbTerminalComplete(false); }}
                 />

@@ -8,15 +8,25 @@ export interface ToDoItem {
   priority: "高" | "中" | "低";
 }
 
+export interface ComparisonData {
+  columns: string[];
+  rows: string[][];
+  caption?: string;
+}
+
 export interface WBResultData {
   conclusions?: string[];
+  conclusionsTitle?: string;
   todos?: ToDoItem[];
   risks?: string[];
   email?: string;
+  emailTitle?: string;
   report?: string;
+  reportTitle?: string;
   prd?: {
     sections: { title: string; content: string }[];
   };
+  comparison?: ComparisonData;
 }
 
 // ===== WorkBuddy 场景演示数据 =====
